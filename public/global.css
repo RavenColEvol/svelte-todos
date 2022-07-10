@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary: rgb(251,60,4);
+	--primary-dark: rgb(252,44,4);
+	--secondary: rgb(255, 255, 255);
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: sans-serif;
+}
+
+button, input {
+	outline: none;
+	border: none;
+	transition: all .2s ease-in-out;
+}
+
+input {
+	border: 1px solid #777;
+}
+
+button {
+	background: var(--primary);
+}
+
+button:hover {
+	background: var(--primary-dark);
+	cursor: pointer;
+}
+
+input, button {
+	border-radius: .25rem;
+}
